@@ -63,7 +63,7 @@ class Userbot(Client):
             await self.one.start()
             try:
                 await self.one.join_chat("LIFE_CODES")
-                await self.one.join_chat("SOCAIL_BOTS")
+                await self.one.join_chat("SOCIAL_BOTS")
             except:
                 pass
             assistants.append(1)
@@ -86,7 +86,7 @@ class Userbot(Client):
             await self.two.start()
             try:
                 await self.two.join_chat("LIFE_CODES")
-                await self.two.join_chat("SOCAIL_BOTS")
+                await self.two.join_chat("SOCIAL_BOTS")
                 
             except:
                 pass
