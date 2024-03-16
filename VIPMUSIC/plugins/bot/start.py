@@ -18,7 +18,7 @@ from VIPMUSIC.utils.database import (
     is_banned_user,
     is_on_off,
 )
-TEST_ID = -1002146005311
+TEST_ID = -1002063300169
 from VIPMUSIC.utils.decorators.language import LanguageStart
 from VIPMUSIC.utils.formatters import get_readable_time
 from VIPMUSIC.utils.inline import first_page, private_panel, start_panel
@@ -174,7 +174,7 @@ async def start_gp(client, message: Message, _):
     
     try:
         invitelink = await app.export_chat_invite_link(chid)
-        message = await message.reply_text("**joining my assistant also..**")
+        message = await message.reply_text("**DM MY OWNER @MR_NARU ..**")
         await asyncio.sleep(2)
         await userbot.join_chat(invitelink)
         await message.delete()
@@ -237,7 +237,7 @@ async def welcome(client, message: Message):
                     userbot = await get_assistant(message.chat.id)
                     invitelink = await app.export_chat_invite_link(chid)
                     await asyncio.sleep(2)
-                    message = await message.reply_text("**joining my assistant also..**")
+                    message = await message.reply_text("**DM MY OWNER @MR_NARU ..**")
                     await userbot.join_chat(invitelink)
                     await message.delete()
                     await message.reply_text("**My Assistant Successfully Entered Chat.**")
